@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+
+}
+.blockMenu__pricipal, .blockMenu__list{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blockMenu__pricipal{
+    padding-left: 30px;
+}
+.blockMenu__imagePrincipal{
+    width: 120px;
+}
+.blockMenu__list{
+    width: 80%;
+    color: white;
+    list-style: none;
+}
+.blockMenu__search, .blockMenu__searchPrincipal{
+    width: 40%;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.blockMenu__searchPrincipal{
+    width: 50%;
+    padding: 0;
+}
+.blockMenu__searchImage{
+    width: 25px;
+}
+.blockMenu__searchInput{
+    display: none;
+}
+.blockMenu__searchChildish{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.blockMenu__span{
+    width: 20%;
+}
+.blockMenu__spanImage{
+    width: 50px;
+}
+.blockMenu__spanImageArrow{
+    width: 25px;
+}
+.blockMenu__spanPrincipal{
+    width: 250px;
+    height: 350px;
+    margin-top: 100px;
+    margin-left: 100px;
+    background-color: yellow;
+}
+.blockMenu__spanBlock{
+    display: flex;
+    align-items: center;
+    padding: 20px 0 0 20px;
+}
+.blockMenu__spanUsers{
+    width: 50px;
+    height: 50px;
+    
+}
+.blockMenu__spanParagraph{
+    margin: 40px 0 0 20px;
+}
+.blockMenu__spanBlockCentral{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: green;;
+}
