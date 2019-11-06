@@ -8,46 +8,60 @@
     <title>Document</title>
 </head>
 <body> 
-    <header>   
-        <nav class="blockMenu__pricipal">
-            <img class="blockMenu__imagePrincipal" src="assets/netflix.png" alt="">
-            <ul class="blockMenu__list">
-                <li>Inicio</li>
-                <li>Series</li>
-                <li>Filmes</li>
-                <li>Adicionados Recentemente</li>
-                <li>Minha lista</li>
-            </ul>
-        </nav>
-        <div class="blockMenu__search">
-            <div class="blockMenu__searchPrincipal">
-                <img class="blockMenu__searchImage" src="assets/lupa.png" alt="">
-                <input class="blockMenu__searchInput" placeholder="Título, gente e gêneros" type="text" name="" id="">
-                <a class="blockMenu__searchChildish" href="">INFANTIL</a>
-                <img class="blockMenu__searchImage" src="assets/sino.png" alt="">
+    <header>  
+        <div class="blockMenu">
+            <nav class="blockMenu__principal">
+                <img class="blockMenu__imagePrincipal" src="assets/netflix.png" alt="">
+                <ul class="blockMenu__list">
+                    <li>Inicio</li>
+                    <li>Series</li>
+                    <li>Filmes</li>
+                    <li>Adicionados Recentemente</li>
+                    <li>Minha lista</li>
+                </ul>
+            </nav>
+            <div class="blockMenu__search">
+                    <div class="blockMenu__searchPrincipal">
+                        <img class="blockMenu__searchImage" src="assets/lupa.png" alt="" id="lupa">
+                        <input class="blockMenu__searchInput" placeholder="Título, gente e gêneros" type="text" name="" id="pesquisa">
+                        <a class="blockMenu__searchChildish" href="">INFANTIL</a>
+                        <img class="blockMenu__searchImage" src="assets/sino.png" alt="">
+                    </div>
+                    <span class="blockMenu__span">
+                        <img class="blockMenu__spanImage" src="assets/user.jpg" alt="">
+                        <img class="blockMenu__spanImageArrow" src="assets/seta.png" alt=""">
+                    </span>
+                </div>
+                <div class="blockMenu__spanPrincipal">
+                    <div class="blockMenu__spanBlock">
+                    <img class="blockMenu__spanUsers" src="assets/galo.png" alt="">
+                    <p>Usuario 1</p>
+                </div>
+                <div class="blockMenu__spanBlock">
+                    <img class="blockMenu__spanUsers" src="assets/pinguin.png" alt="">
+                    <p>Usuario 2</p>
+                </div>
+                <p class="blockMenu__spanParagraph">Gerenciar Perfis</p>
+                <div class="blockMenu__spanBlockCentral">
+                    <p class="blockMenu__spanCentralParagraph">Conta</p>
+                    <p class="blockMenu__spanCentralParagraph">Centro de Ajuda</p>
+                    <p class="blockMenu__spanCentralParagraph">Sair da Netflix</p>
+                </div>
             </div>
-            <span class="blockMenu__span">
-                <img class="blockMenu__spanImage" src="assets/user.jpg" alt="">
-                <img class="blockMenu__spanImageArrow" src="assets/seta.png" alt=""">
-            </span>
+        </div>
+        <div class="blockDescription">
+            <h1 class="blockDescription__title">Assista a primeira temporada!</h1>
+            <p class="blockDescription__paragraph">O congressista Francis Underwood e sua mulher, Claire,
+                    fazem de tudo para conquistar seus objetivos, não importa
+                    o que aconteça. Um mundo político recheado de ganância, corrupção
+                    e luxúria na capital Washington.</p>
+            <div class="blockDescription__options">
+                <span class="blockDescription__optionsBlocks">Assistir</span>
+                <span class="blockDescription__optionsBlocks">+ Minha lista </span>
+                <span class="blockDescription__optionsBlocks">Mais informações</span>
+            </div>
         </div>
     </header>
-        <div class="blockMenu__spanPrincipal">
-            <div class="blockMenu__spanBlock">
-                <img class="blockMenu__spanUsers" src="assets/galo.png" alt="">
-                <p>Usuario 1</p>
-            </div>
-            <div class="blockMenu__spanBlock">
-                <img class="blockMenu__spanUsers" src="assets/pinguin.png" alt="">
-                <p>Usuario 2</p>
-            </div>
-            <p class="blockMenu__spanParagraph">Gerenciar Perfis</p>
-            <div class="blockMenu__spanBlockCentral">
-                <p>Conta</p>
-                <p>Centro de Ajuda</p>
-                <p>Sair da Netflix</p>
-            </div>
-        </div>
     <script src="main.js"></script>
 </body>
 </html>
