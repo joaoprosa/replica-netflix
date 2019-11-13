@@ -13,9 +13,11 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(assets/houseofcards.png);
+    background-image: url(assets/vikings.jpg);
     background-size: cover;
-
+}
+li{
+    font-size: 0.9em;
 }
 .blockMenu{
     width: 100vw;
@@ -34,21 +36,54 @@ header{
     width: 120px;
 }
 .blockMenu__list{
-    width: 50%;
+    width: 60%;
     justify-content: space-around;
     color: white;
     list-style: none;
+}
+@media(max-width:768px){
+    .blockMenu__list{
+        width: 300px;
+        height: 350px;
+        left: 120px;
+        top: 85px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: yellow;
+    }
+}
+.title__navegar{
+    display: none;
+    color: white;
+    font-size: 0.7em; 
+    margin-left: 10px;
+}
+@media(max-width:768px){
+    .title__navegar{
+        display: block;
+    }
 }
 .blockMenu__search, .blockMenu__searchPrincipal{
     width: 50%;
     display: flex;
     align-items: center;
 }
+@media(max-width:768px){
+    .blockMenu__search{
+        width: 80%;    
+    }
+}
 .blockMenu__searchPrincipal{
     width: 55%;
     justify-content: space-around;
     margin-right: auto;
     padding: 0;
+}
+.waltin{
+    border: 2px solid white;
+    display: flex;
+    margin-right: 10px;
 }
 .blockMenu__searchImage{
     width: 25px;
@@ -57,6 +92,8 @@ header{
     display: none;
     border: none;
     outline: none;
+    background-color: black;
+    margin-left: 10px;
 }
 .blockMenu__searchChildish{
     color: white;
@@ -117,19 +154,59 @@ header{
     margin-left: 20px;
 }
 .blockDescription__title, .blockDescription__paragraph{
-    font-size: 3em;
+    font-size: 1.5em;
     margin-bottom: 30px;
-    color: rgb(248, 8, 8);
+    color: rgb(255, 255, 255);
+}
+.blockDescription__title{
+    margin-top: 180px;
+}
+@media(max-width:768px){
+    .blockDescription__title{
+        margin-top: 155px;
+    }
 }
 .blockDescription__paragraph{
-    font-size: 1.5em;
+    font-size: 1.3em;
+}
+@media(max-width:768px){
+    .blockDescription__paragraph{
+        font-size: 1em;
+    }
 }
 .blockDescription__options{
-    widows: 52vw;
-    height: 20vh;
-    background-color: white;
+    width: 52vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media(max-width:768px){
+    .blockDescription__options{
+        width: 55vw;
+    }
 }
 .blockDescription__optionsBlocks{
-    width: 17vw;
-    background-color: rgb(255, 0, 0);
+    width: 12vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+}
+@media(max-width:768px){
+    .blockDescription__optionsBlocks{
+        width: 17vw;
+    }
+}
+.blockDescription__optionsBlocks:hover{
+    width: 15vw;
+    height: 10vh;
+    background-color: rgb(22, 22, 22);
+}
+@media(max-width:768px){
+    .blockDescription__optionsBlocks:hover{
+        width: 18vw;
+    }
 }
