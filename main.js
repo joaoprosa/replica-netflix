@@ -21,3 +21,15 @@ seta.addEventListener('mouseenter' , function(){
         usuario.style.display = 'flex'
     }
 })
+
+let setaNav = document.querySelector('.img__navegar')
+let navegar = document.querySelector('.blockMenu__list')
+
+setaNav.addEventListener('click', function(){
+    if(navegar.style.display === 'none'){
+        navegar.style.display = 'flex'
+    }
+    else{
+        navegar.style.display = 'none'
+    }
+})

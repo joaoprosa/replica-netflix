@@ -32,8 +32,18 @@ li{
 .blockMenu__principal{
     padding-left: 30px;
 }
+@media(max-width:768px){
+    .blockMenu__principal {
+        padding-left: 10px;
+    }
+}
 .blockMenu__imagePrincipal{
     width: 120px;
+}
+@media(max-width:768px){
+    .blockMenu__imagePrincipal{
+        width: 60px;
+    }
 }
 .blockMenu__list{
     width: 60%;
@@ -48,9 +58,16 @@ li{
         left: 120px;
         top: 85px;
         position: absolute;
-        display: flex;
+        display: none;
         flex-direction: column;
         background-color: yellow;
+    }
+}
+@media (max-width: 425px){
+    .blockMenu__list{
+        width: 200px;
+        left: 15px;
+        top: 90px;
     }
 }
 .title__navegar{
@@ -61,6 +78,17 @@ li{
 }
 @media(max-width:768px){
     .title__navegar{
+        font-size: 0.2em;
+        display: block;
+    }
+}
+.img__navegar{
+    width: 13px;
+    margin-left: 10px;
+    display: none;
+}
+@media(max-width:768px){
+    .img__navegar{
         display: block;
     }
 }
@@ -98,6 +126,7 @@ li{
 .blockMenu__searchChildish{
     color: white;
     text-decoration: none;
+    display: none;
     font-size: 15px;
 }
 .blockMenu__span{
@@ -106,6 +135,10 @@ li{
 .blockMenu__spanImage{
     width: 50px;
 }
+/* @media(max-width:768px){
+    .blockMenu__spanImage{
+    }
+} */
 .blockMenu__spanImageArrow{
     width: 25px;
 }
@@ -119,6 +152,18 @@ li{
     flex-direction: column;
     border: solid gray 2px;
     background-color: rgb(0, 0, 0);
+}
+@media(max-width:425px){
+    .blockMenu__spanPrincipal{
+        width: 50vw; 
+        top: 15vh;
+        left: 43vw;
+    }
+}
+@media(max-width:425px){
+    .blockMenu__search{
+        width: 80%;    
+    }
 }
 .blockMenu__spanBlock{
     display: flex;
@@ -153,6 +198,11 @@ li{
     margin-bottom: 200px;
     margin-left: 20px;
 }
+@media(max-width:768px){
+    .blockDescription{
+        width: 80vw;
+    }
+}
 .blockDescription__title, .blockDescription__paragraph{
     font-size: 1.5em;
     margin-bottom: 30px;
@@ -186,6 +236,11 @@ li{
         width: 55vw;
     }
 }
+@media(max-width:425px){
+    .blockDescription__options{
+        width: 90vw;
+    }
+}
 .blockDescription__optionsBlocks{
     width: 12vw;
     height: 8vh;
@@ -200,6 +255,11 @@ li{
         width: 17vw;
     }
 }
+@media(max-width:425px){
+    .blockDescription__optionsBlocks{
+        width: 28vw;
+    }
+}
 .blockDescription__optionsBlocks:hover{
     width: 15vw;
     height: 10vh;
@@ -208,5 +268,10 @@ li{
 @media(max-width:768px){
     .blockDescription__optionsBlocks:hover{
         width: 18vw;
+    }
+}
+@media(max-width:425px){
+    .blockDescription__optionsBlocks:hover{
+        width: 32vw;
     }
 }
