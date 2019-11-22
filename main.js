@@ -33,3 +33,6 @@ setaNav.addEventListener('click', function(){
         navegar.style.display = 'none'
     }
 })
+
+//slide//
+
